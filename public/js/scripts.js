@@ -34,10 +34,11 @@ $(document).ready(function() {
     });
 
     $('.nav a').click(function(event) {
+        var delta = 90; // body top padding
         var id = $(this).attr('href');
 
         $('html, body').animate({
-            scrollTop: $(id).offset().top
+            scrollTop: $(id).offset().top - delta
         }, 2000);
 
         $('.nav a').each(function(index, el) {
@@ -45,7 +46,7 @@ $(document).ready(function() {
         });
 
         $(this).addClass('active');
-        
+
         return false;
     });
 });
