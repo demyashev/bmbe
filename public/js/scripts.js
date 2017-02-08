@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    $('#image-gallery').lightSlider({
+    $('#slider').lightSlider({
         auto:true,
         adaptiveHeight: false,
         item: 1,
@@ -10,8 +10,6 @@ $(document).ready(function() {
         speed: 1000,
         pause: 3000,
         useCSS: false,
-      
-     
         onSliderLoad: function() {
             var slides = $('.lslide');
             var next = $(slides[1]).children('img').attr('alt');
@@ -21,7 +19,7 @@ $(document).ready(function() {
             $('.lSAction').wrap('<div class="container"></div>');
             $('.lSAction').append('<span class="lSPrev-desc">' + prev + '</span>');
             $('.lSAction').append('<span class="lSNext-desc">' + next + '</span>');
-            $('#image-gallery').removeClass('cS-hidden');
+            $('#slider').removeClass('cS-hidden');
         },
         onAfterSlide: function() {
             lScurrentSlide = $('.lslide.active');
@@ -33,5 +31,21 @@ $(document).ready(function() {
 
             
         }
+    });
+
+    $('.nav a').click(function(event) {
+        var id = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 2000);
+
+        $('.nav a').each(function(index, el) {
+            $(el).removeClass('active');   
+        });
+
+        $(this).addClass('active');
+        
+        return false;
     });
 });

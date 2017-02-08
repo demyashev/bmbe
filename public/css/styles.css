@@ -10,12 +10,30 @@
     border-color: #000;
 }
 
+.btn-default {
+    color: #000;
+    background-color: #fff;
+    border-color: #ececec;
+}
+
+.btn .icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-size: 14px;
+    background-repeat: no-repeat;
+}
+
+.icon-arrow-carrot-right {
+    background-image: url('/public/img/icons/arrow_carrot-2right.svg');
+}
+
 /**
  *  Header
  */
 .nav {
     padding: 10px 0;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
 }
 
 .nav > li > a {
@@ -34,18 +52,35 @@
     margin-bottom: 0;
 }
 
+.navbar-toggle {
+    background: #fff;
+    margin-top: 18px;
+}
+
+.navbar-toggle .icon-bar {
+    background: #000;
+    width: 30px;
+}
+
 .navbar-brand {
+    margin-right: 30px;
     padding-top: 0;
     width: 70px;
     height: 70px;
 }
 
 .navbar .btn-join {
+    color: #fff;
+    margin: 0;
     font-size: 12px;
     padding: 12px 26px;
-    margin-top: 14px;
-    margin-bottom: 14px;
+    margin-top: 2px;
 }
+
+    .navbar .btn-join:hover {
+        background: #ff5252;
+        color: #010101;
+    }
 
 /**
  *  Slider
@@ -142,3 +177,194 @@
 .lSSlideOuter .container {
     position: relative;
 } 
+
+/**
+ * Section
+ */
+.section {
+    padding: 0 0 100px 0;
+}
+
+.lead {
+    padding: 80px 0;
+    text-align: center;
+}
+.lead h3 {
+    color: #abc6ca;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.lead h2 {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.lead::after {
+    display: inline-block;
+    width: 36px;
+    height: 3px;
+    background: #fff200;
+}
+
+/**
+ * Intro
+ */
+#intro {
+    padding: 0 0 20px 0;
+}
+
+.intro-item,
+.join-item {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+    .intro-item > .icon {
+        width: 90px;
+        height: 90px;
+        display: inline-block;
+        margin-bottom: 50px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+        .intro-item > .icon.earth {background-image: url('/public/img/icons/earth.png');}
+        .intro-item:hover > .icon.earth {background-image: url('/public/img/icons/earth_h.png');}
+        .intro-item > .icon.people {background-image: url('/public/img/icons/people.png');}
+        .intro-item:hover > .icon.people {background-image: url('/public/img/icons/people_h.png');}
+        .intro-item > .icon.flover {background-image: url('/public/img/icons/flover.png');}
+        .intro-item:hover > .icon.flover {background-image: url('/public/img/icons/flover_h.png');}
+    
+    .intro-item > h4 {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    .intro-item > p {
+        font-size: 14px;
+        color: #3e5c59;
+        line-height: 20px;
+    }
+
+    .intro-item > .btn {
+        margin-top: 40px;
+        padding: 12px 20px;
+    }
+
+/**
+ * Splash
+ */
+.splash {
+    padding: 80px 0;
+    background: #ffb300;
+    text-align: center;
+}
+
+.splash p {
+    line-height: 80px;
+}
+
+.splash p:first-child {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.splash p:last-child {
+    font-size: 50px;
+    color: #000;
+}
+
+/**
+ * What
+ */
+#what {
+    background: #fdfdfd;
+    padding-top: 80px;
+}
+
+#what .lead {
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#what .row p {
+    color: #3e5c59;
+}
+
+.what-img {
+    max-width: 100%;
+}
+
+#what .btn-group {
+    padding-top: 40px;
+}
+
+#what .btn-social {
+    display: block;
+    padding: 0;
+    width: 38px;
+    height: 38px;
+    background-size: 38px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 15px;
+}
+    
+    .btn-social.fb {background-image: url('/public/img/icons/social-fb.png');}        
+    .btn-social.vk {background-image: url('/public/img/icons/social-vk.png');}
+    .btn-social.tw {background-image: url('/public/img/icons/social-tw.png');}
+    .btn-social.rss {background-image: url('/public/img/icons/social-rss.png');}
+
+/**
+ * Join
+ */
+#join {
+    background: #f7fcfc;
+    padding: 0 0 20px 0;
+}
+
+.join-item .icon {
+    height: 140px;
+    display: inline-block;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+    .icon.iboost {width: 185px; background-image: url('/public/img/icons/iboost.png');}
+    .icon.adwithme {width: 114px; background-image: url('/public/img/icons/adwithme.png');}
+    .icon.bmbe {width: 115px; background-image: url('/public/img/icons/bmbe.png');}
+
+#join .btn {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 260px;
+    font-size: 18px;
+    padding: 18px 0;
+}
+
+@media (min-width: 768px) {
+    .lSAction > a {
+        background-size: 64px;
+        width: 32px;
+        height: 32px;
+        top: 56px;
+    }
+
+    .lSAction > .lSNext {
+        background-position: -96px 0;
+    }
+
+    .lSSlideOuter .lSPager.lSpg {
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+        left: 0;
+    }
+}
