@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,6 +10,9 @@
         <link rel="icon" href="/public/img/favicon.ico">
 
         <title>BMBE</title>
+            
+        <!-- base64 fonts -->
+        <link href="/public/css/fonts.min.css" rel="stylesheet">
 
         <!-- Bootstrap core CSS -->
         <link href="/public/css/bootstrap.min.css" rel="stylesheet">
@@ -159,22 +161,28 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 join-item">
-                        <div class="icon iboost"></div>
-                        <h4>Продвижение в инстаграм</h4>
-                        <p>Увеличение подписчиков, лайков<br>и продаж в инстаграм</p>
-                        <a href="#" class="btn btn-primary" role="button">Перейти</a>
+                        <div class="join-container">
+                            <div class="icon iboost"></div>
+                            <h4>Продвижение в инстаграм</h4>
+                            <p>Увеличение подписчиков, лайков и продаж в инстаграм</p>
+                            <a href="#" class="btn btn-primary" role="button">Перейти</a>
+                        </div>
                     </div>
                     <div class="col-md-4 join-item">
-                        <div class="icon adwithme"></div>
-                        <h4>Доступ к рекламе</h4>
-                        <p>Здесь ты найдешь рекламодателя<br>на свою страницу.</p>
-                        <a href="#" class="btn btn-primary" role="button">Перейти</a>
+                        <div class="join-container">
+                            <div class="icon adwithme"></div>
+                            <h4>Доступ к рекламе</h4>
+                            <p>Здесь ты найдешь рекламодателя на свою страницу.</p>
+                            <a href="#" class="btn btn-primary" role="button">Перейти</a>
+                        </div>
                     </div>
                     <div class="col-md-4 join-item">
-                        <div class="icon bmbe"></div>
-                        <h4>Модельное агентство</h4>
-                        <p>Развивай свой аккаунт с нами - получай<br>дивиденды с рекламы</p>
-                        <a href="#" class="btn btn-primary" role="button">Начать</a>
+                        <div class="join-container">
+                            <div class="icon bmbe"></div>
+                            <h4>Модельное агентство</h4>
+                            <p>Развивай свой аккаунт с нами - получай дивиденды с рекламы</p>
+                            <a href="#" class="btn btn-primary" role="button">Начать</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -369,28 +377,34 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 news-item">
-                        <a href="#" class="thumbnail">
-                            <img src="/public/files/news/1.jpg" alt="">
-                        </a>
-                        <h4>250 тысяч за первый год</h4>
-                        <p>250 тысяч за первый год: как австралийка<br>разбогатела в Instagram</p>
-                        <a href="#" class="btn btn-default" role="button">Подробнее <span class="icon icon-arrow-carrot-right"></span></a>
+                        <div class="news-container">
+                            <a href="#" class="thumbnail">
+                                <img src="/public/files/news/1.jpg" alt="">
+                            </a>
+                            <h4>250 тысяч за первый год</h4>
+                            <p>250 тысяч за первый год: как австралийка разбогатела в Instagram</p>
+                            <a href="#" class="btn btn-default" role="button">Подробнее <span class="icon icon-arrow-carrot-right"></span></a>
+                        </div>
                     </div>
                     <div class="col-md-4 news-item">
-                        <a href="#" class="thumbnail">
-                            <img src="/public/files/news/2.jpg" alt="">
-                        </a>
-                        <h4>&laquo;звезды&raquo; Instagram</h4>
-                        <p>Сколько попросят &laquo;звезды&raquo; Instagram за<br> рекламу вашего бренда</p>
-                        <a href="#" class="btn btn-default" role="button">Подробнее <span class="icon icon-arrow-carrot-right"></span></a>
+                        <div class="news-container">
+                            <a href="#" class="thumbnail">
+                                <img src="/public/files/news/2.jpg" alt="">
+                            </a>
+                            <h4>&laquo;звезды&raquo; Instagram</h4>
+                            <p>Сколько попросят &laquo;звезды&raquo; Instagram за рекламу вашего бренда</p>
+                            <a href="#" class="btn btn-default" role="button">Подробнее <span class="icon icon-arrow-carrot-right"></span></a>
+                        </div>
                     </div>
                     <div class="col-md-4 news-item">
-                        <a href="#" class="thumbnail">
-                            <img src="/public/files/news/3.jpg" alt="">
-                        </a>
-                        <h4>56% за год</h4>
-                        <p>Продажи одежды и обуви через Instagram<br> выросли на 56 % за год!</p>
-                        <a href="#" class="btn btn-default" role="button">Подробнее <span class="icon icon-arrow-carrot-right"></span></a>
+                        <div class="news-container">
+                            <a href="#" class="thumbnail">
+                                <img src="/public/files/news/3.jpg" alt="">
+                            </a>
+                            <h4>56% за год</h4>
+                            <p>Продажи одежды и обуви через Instagram выросли на 56 % за год!</p>
+                            <a href="#" class="btn btn-default" role="button">Подробнее <span class="icon icon-arrow-carrot-right"></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -420,71 +434,63 @@
     </div><!-- /wrapper -->
 
     <div id="signin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="signinLead">
-    
-
-    <div class="vertical-alignment-helper">
-        <div class="vertical-align-center">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="lead" id="signinLead">
-                                <h3>Участие</h3>
-                                <h2>Как стать участником?</h2>
+        <div class="vertical-alignment-helper">
+            <div class="vertical-align-center">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="lead" id="signinLead">
+                                    <h3>Участие</h3>
+                                    <h2>Как стать участником?</h2>
+                                </div>
+                                <p>Приведи свой аккаунт в порядок, добавь свои лучшие снимки и заполни форму рядом.</p>
+                                <ul>
+                                    <li>Укажи свой никнейм в instagram, пример @nickname</li>
+                                    <li>Укажи свой адрес почты</li>
+                                    <li>Укажи контактный телефон</li>
+                                    <li>Если подходишь - наш менеджер напишет или перезвонит</li>
+                                </ul>
                             </div>
-                            <p>Приведи свой аккаунт в порядок, добавь свои лучшие снимки и заполни форму рядом.</p>
-                            <ul>
-                                <li>Укажи свой никнейм в instagram, пример @nickname</li>
-                                <li>Укажи свой адрес почты</li>
-                                <li>Укажи контактный телефон</li>
-                                <li>Если подходишь - наш менеджер напишет или перезвонит</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <form action="#" method="post" id="signinForm">
-                                <div class="form-group">
-                                    <label for="signinUsername" class="control-label">Аккаунт в инстаграм</label>
-                                    <input type="text" class="form-control" id="signinUsername" placeholder="@nickname" name="username">
-                                </div>
-                              
-                                <div class="form-group">
-                                    <label for="signinEmail" class="control-label">Почта для контакта</label>
-                                    <input type="email" class="form-control" id="signinEmail" placeholder="some@example.com" name="email">
-                                </div>
-                             
-                                <div class="form-group form-phone">
-                                    <label for="signinUsername" class="control-label">Контактный телефон</label>
-                                    <input type="text" class="form-control" id="signinPhone" placeholder="" name="phone">
-                                </div>
+                            <div class="col-md-6">
+                                <form action="#" method="post" id="signinForm">
+                                    <div class="form-group">
+                                        <label for="signinUsername" class="control-label">Аккаунт в инстаграм</label>
+                                        <input type="text" class="form-control" id="signinUsername" placeholder="@nickname" name="username">
+                                    </div>
+                                  
+                                    <div class="form-group">
+                                        <label for="signinEmail" class="control-label">Почта для контакта</label>
+                                        <input type="email" class="form-control" id="signinEmail" placeholder="some@example.com" name="email">
+                                    </div>
+                                 
+                                    <div class="form-group form-phone">
+                                        <label for="signinUsername" class="control-label">Контактный телефон</label>
+                                        <input type="text" class="form-control" id="signinPhone" placeholder="" name="phone">
+                                    </div>
 
-                                <button id="signinSubmit" type="submit" class="btn btn-primary" data-loading-text="Отправка..." autocomplete="off">Принять участие</button>
-                            </form>
+                                    <button id="signinSubmit" type="submit" class="btn btn-primary" data-loading-text="Отправка..." autocomplete="off">Принять участие</button>
+                                </form>
+                            </div>
+                            <div class="icon-close"></div>
                         </div>
-                        <div class="icon-close"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-        
-    
-
-
     </div><!-- /modal -->
 
 
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/public/js/jquery-3.1.1.min.js"><\/script>')</script>
-        <script src="/public/js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="/public/js/ie10-viewport-bug-workaround.js"></script>
-        <script src="/public/js/lightslider.min.js"></script>
-        <script src="/public/js/jquery.validate.min.js"></script>
-        <script src="/public/js/additional-methods.min.js"></script>
-        <script src="/public/js/intlTelInput.js"></script>
-        <script src="/public/js/scripts.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/public/js/jquery-3.1.1.min.js"><\/script>')</script>
+    <script src="/public/js/bootstrap/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script async src="/public/js/ie10-viewport-bug-workaround.js"></script>
+    <script async src="/public/js/lightslider/lightslider.min.js"></script>
+    <script async src="/public/js/validate/jquery.validate.min.js"></script>
+    <script async src="/public/js/validate/additional-methods.min.js"></script>
+    <script async src="/public/js/intltelinput/intlTelInput.js"></script>
+    <script async src="/public/js/scripts.js"></script>
     </body>
 </html>

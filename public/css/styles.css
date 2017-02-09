@@ -1,5 +1,6 @@
 body {
     padding-top: 90px;
+    font-family: 'Gotham Pro', Arial, sans-serif;
 }
 
 input[type="text"],
@@ -31,6 +32,8 @@ input[type="email"] {
     color: #000;
     background-color: #fff;
     border-color: #ececec;
+    font-weight: normal;
+    padding: 8px 12px;
 }
 
 .btn-default:hover {
@@ -100,6 +103,7 @@ blockquote {
 }
 
 .nav > li > a {
+    font-weight: normal;
     text-transform: uppercase;
     color: #080f19;
     padding-left: 20px;
@@ -281,12 +285,14 @@ blockquote {
     color: #abc6ca;
     font-size: 12px;
     text-transform: uppercase;
+    font-family: 'Gotham Pro Narrow', Arial, sans-serif;
+    font-weight: 500;
 }
 
 .lead h2 {
     color: #000;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .lead::after {
@@ -338,7 +344,8 @@ blockquote {
     .news-item > h4 {
         font-size: 14px;
         line-height: 20px;
-        font-weight: 700;
+        font-family: 'Gotham Pro Narrow', Arial, sans-serif;
+        font-weight: 500;
         color: #000;
         text-transform: uppercase;
     }
@@ -348,12 +355,15 @@ blockquote {
         font-size: 14px;
         color: #3e5c59;
         line-height: 20px;
+        font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+        font-weight: 300;
     }
 
     .intro-item > .btn,
     .news-item > .btn {
         margin-top: 40px;
         padding: 12px 20px;
+        font-weight: normal;
     }
 
 /**
@@ -371,12 +381,13 @@ blockquote {
 
 .splash p:first-child {
     font-size: 60px;
-    font-weight: 700;
+    font-weight: bold;
     color: #fff;
 }
 
 .splash p:last-child {
     font-size: 50px;
+    font-weight: normal;
     color: #000;
 }
 
@@ -396,6 +407,8 @@ blockquote {
 
 #what .row p {
     color: #3e5c59;
+    font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+    font-weight: 300;
 }
 
 .what-img {
@@ -430,6 +443,12 @@ blockquote {
     padding: 0 0 20px 0;
 }
 
+.join-container,
+.news-container {
+    margin: 0 auto;
+    max-width: 260px;
+}
+
 .join-item .icon {
     height: 140px;
     display: inline-block;
@@ -441,10 +460,22 @@ blockquote {
     .icon.adwithme {width: 114px; background-image: url('/public/img/icons/adwithme.png');}
     .icon.bmbe {width: 115px; background-image: url('/public/img/icons/bmbe.png');}
 
+.join-item h4 {
+    font-family: 'Gotham Pro Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.join-item p {
+    font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+    font-weight: 300;
+}
+
 #join .btn {
     margin-top: 30px;
     width: 100%;
-    max-width: 260px;
+    width: 100%;
+    font-family: 'Gotham Pro Narrow', Arial, sans-serif;
+    font-weight: 500;
     font-size: 18px;
     padding: 18px 0;
 }
@@ -513,12 +544,14 @@ blockquote {
     .model-item .info .username {
         line-height: 60px;
         font-size: 24px;
+        font-weight: bold;
         color: #fddb00;
     }
 
     .model-item .info .counter {
         line-height: 60px;
         font-size: 48px;
+        font-weight: normal;
         color: #fff;
     }
 
@@ -545,8 +578,13 @@ blockquote {
 
     .info-text {
         color: #3e5c59;
+        font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+        font-weight: 300;
         padding-right: 70px;
     }
+        .info-text p {
+            font-size: 14px;
+        }
 
         .info-text blockquote {
             font-size: 12px;
@@ -594,6 +632,11 @@ blockquote {
     padding-left: 85px;
 }
 
+#info-more .row p {
+    font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+    font-weight: 300;
+}
+
 /**
  * News
  */
@@ -625,16 +668,24 @@ footer .logo {
 
 footer .main h1 {
     margin: 20px 0 40px 0;
+    font-weight: 300;
 }
 
 footer .main h1 b {
-    font-weight: 700;
+    font-weight: 900;
+}
+
+footer .main p {
+    font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+    font-weight: 100;
 }
 
 footer .copyrights {
     padding: 20px 0;
     background: #111;
     font-size: 12px;
+    font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+    font-weight: 300;
 }
 
 footer .btn-group {
@@ -666,6 +717,12 @@ footer .btn-social.rss {background-image: url('/public/img/icons/social-rss-foot
 .modal .lead {
     text-align: left;
     padding: 0;
+}
+
+#signin .row p,
+#signin .row li {
+    font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+    font-weight: 300; 
 }
 
 #signinForm {
@@ -723,6 +780,10 @@ footer .btn-social.rss {background-image: url('/public/img/icons/social-rss-foot
     -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
     -o-transform: rotate(180deg); /* Для Opera */
     transform: rotate(180deg);
+}
+
+.intl-tel-input {
+    width: 100%;
 }
 
 /**
