@@ -21,6 +21,8 @@
         <!-- Lightslider -->
         <link rel="stylesheet"  href="/public/css/lightslider.css"/>
 
+        <link rel="stylesheet" href="/public/css/intlTelInput.css">
+
         <!-- Custom styles for this template -->
         <link href="/public/css/styles.css" rel="stylesheet">
 
@@ -33,51 +35,51 @@
 
     <body>
 
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img alt="Brand" src="/public/img/logo.jpg" alt="BMBE">
-                    </a>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Меню</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- <li class="active"><a href="#">Home</a></li> -->
-                        <li><a href="#intro">Интро</a></li>
-                        <li><a href="#what">Что это?</a></li>
-                        <li><a href="#join">Участие</a></li>
-                        <li><a href="#models">Модели</a></li>
-                        <li><a href="#info">Инфо</a></li>
-                        <li><a href="#news">Новости</a></li>
-                    </ul>
-                    
-                    <ul class="nav navbar-nav navbar-right">
-                        <li role="presentation" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                EN <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">RU</a></li>
-                                <li><a href="#">UA</a></li>
-                                <li><a href="#">EN</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" role="button" class="btn btn-primary navbar-btn navbar-right btn-join">Принять участие</a>
-                        </li>
-                    </ul>
-                </div><!--/.nav-collapse -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <img alt="Brand" src="/public/img/logo.jpg" alt="BMBE">
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Меню</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-        </nav>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#intro">Интро</a></li>
+                    <li><a href="#what">Что это?</a></li>
+                    <li><a href="#join">Участие</a></li>
+                    <li><a href="#models">Модели</a></li>
+                    <li><a href="#info">Инфо</a></li>
+                    <li><a href="#news">Новости</a></li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            EN <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">RU</a></li>
+                            <li><a href="#">UA</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" role="button" class="btn btn-primary navbar-btn navbar-right btn-join" data-toggle="modal" data-target="#signin">Принять участие</a>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
 
-
-       <!--  -->
+    <div class="wrapper">
+    
+        <!--  -->
         <ul id="slider" class="gallery list-unstyled cS-hidden">
             <li data-thumb="/public/files/slider/1.jpg" class="active"> 
                 <img src="/public/files/slider/1.jpg" alt="1 Becoming More Beautiful & Earn"/>
@@ -178,6 +180,298 @@
             </div>
         </div>
 
+        <div id="models" class="section">
+            <div class="container">
+                <div class="row lead">
+                    <h3>Портфолио</h3>
+                    <h2>Наши участники</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 model-item">
+                    <a href="#" class="thumbnail">
+                        <div class="info-bg">
+                            <div class="info">
+                                <div class="username">@Nastysha</div>
+                                <div class="counter">
+                                    <span class="icon-user"></span>37 000 
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/public/files/models/1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 model-item">
+                   <a href="#" class="thumbnail">
+                        <div class="info-bg">
+                            <div class="info">
+                                <div class="username">@shivalova</div>
+                                <div class="counter">
+                                    <span class="icon-user"></span>15 050 
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/public/files/models/2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 model-item">
+                    <a href="#" class="thumbnail">
+                        <div class="info-bg">
+                            <div class="info">
+                                <div class="username">@rash2x</div>
+                                <div class="counter">
+                                    <span class="icon-user"></span>49 100 
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/public/files/models/3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 model-item">
+                    <a href="#" class="thumbnail">
+                        <div class="info-bg">
+                            <div class="info">
+                                <div class="username">@Nastysha</div>
+                                <div class="counter">
+                                    <span class="icon-user"></span>37 000 
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/public/files/models/4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 model-item">
+                    <a href="#" class="thumbnail">
+                        <div class="info-bg">
+                            <div class="info">
+                                <div class="username">@RedFox223</div>
+                                <div class="counter">
+                                    <span class="icon-user"></span>28 847 
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/public/files/models/5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 model-item">
+                    <a href="#" class="thumbnail">
+                        <div class="info-bg">
+                            <div class="info">
+                                <div class="username">@Nata_ice</div>
+                                <div class="counter">
+                                    <span class="icon-user"></span>14 500 
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/public/files/models/6.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 model-item">
+                    <a href="#" class="thumbnail">
+                        <div class="info-bg">
+                            <div class="info">
+                                <div class="username">@blackJack</div>
+                                <div class="counter">
+                                    <span class="icon-user"></span>29 900 
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/public/files/models/7.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 model-item">
+                    <a href="#" class="thumbnail">
+                        <div class="info-bg">
+                            <div class="info">
+                                <div class="username">@forest_</div>
+                                <div class="counter">
+                                    <span class="icon-user"></span>12 000 
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/public/files/models/8.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="info" class="section">
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="row lead">
+                        <h3>Инфо</h3>
+                        <h2>Знаете ли вы?</h2>
+                    </div>
+                    <div class="row info-text">
+                        <p>Многие модели уже зарабатывают баснословные деньги на своем аккаунте в инстаграм. Это стало их основных источником дохода. Они следят за своей женской красотой, а рекламные агенты стоят в очередь, чтоб прорекламировать свою продукцию.</p>
+                        <p>Конечно они пришли к этому не сразу. Но! Чем раньше начнёшь - тем быстрей добьёшься успеха!</p>
+                        <blockquote>
+                            <p>Команда BMBE обладает всеми необходимыми инструментами, технологическим потенциалом и мощностными возможностями, чтоб помочь тебе добиться того же.</p>
+                            <p>Тебе остается следить за собой, продолжать вести свою страницу в Instagram и набраться терпения.</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="/public/img/info.png" alt="" class="info-img">
+                </div>
+            </div>
+        </div>
+
+        <div id="info-more" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 info-more-img to-right">
+                        <img src="/public/img/info/1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row lead">
+                            <h3>Еще немного о BMBE</h3>
+                            <h2>Раскрой талант модели</h2>
+                        </div>
+                        <div class="row">
+                            <p>По мере продвижения твоей страницы тебя оценят многие тысячи людей. У тебя будет возможность наблюдать реакцию на свои фотографии, какие снимки больше лайкают, что людям нравится больше. Ты сможешь понять как тебе стать привлекательней, понять, что конкретно в тебе нравится людям.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mini-lead">
+                            <div class="row lead">
+                                <h2>Минимальный контроль</h2>
+                            </div>
+                            <div class="row">
+                                <p>Мы даем возможности и свободу для творчества. Найди себя и покажи миру ту самую настоящую. От пласмасы все устали - красота в правде. Помни, всегда есть те, кто готов стараться.</p>
+                            </div>
+                        </div>
+                        <div class="mini-lead">
+                            <div class="row lead">
+                                <h2>Инициатива награждается</h2>
+                            </div>
+                            <div class="row">
+                                <p>Мы рады помочь с развитием оригинальных и уникальных личностей и их способностей. Мы готовы выслушать и поддержать любые начинания.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 info-more-img to-left">
+                        <img src="/public/img/info/2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="news" class="section">
+            <div class="container">
+                <div class="row lead">
+                    <h3>Новости</h3>
+                    <h2>События индустрии</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 news-item">
+                        <a href="#" class="thumbnail">
+                            <img src="/public/files/news/1.jpg" alt="">
+                        </a>
+                        <h4>250 тысяч за первый год</h4>
+                        <p>250 тысяч за первый год: как австралийка<br>разбогатела в Instagram</p>
+                        <a href="#" class="btn btn-default" role="button">Подробнее <span class="icon icon-arrow-carrot-right"></span></a>
+                    </div>
+                    <div class="col-md-4 news-item">
+                        <a href="#" class="thumbnail">
+                            <img src="/public/files/news/2.jpg" alt="">
+                        </a>
+                        <h4>&laquo;звезды&raquo; Instagram</h4>
+                        <p>Сколько попросят &laquo;звезды&raquo; Instagram за<br> рекламу вашего бренда</p>
+                        <a href="#" class="btn btn-default" role="button">Подробнее <span class="icon icon-arrow-carrot-right"></span></a>
+                    </div>
+                    <div class="col-md-4 news-item">
+                        <a href="#" class="thumbnail">
+                            <img src="/public/files/news/3.jpg" alt="">
+                        </a>
+                        <h4>56% за год</h4>
+                        <p>Продажи одежды и обуви через Instagram<br> выросли на 56 % за год!</p>
+                        <a href="#" class="btn btn-default" role="button">Подробнее <span class="icon icon-arrow-carrot-right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="main">
+                <div class="container">
+                    <a href="/" class="logo">
+                        <img src="/public/img/logo.jpg" alt="">
+                    </a>
+                    <h1>Model <b>Agency <br>&amp; Promotion</b> Online</h1>
+                    <p>Поделись ссылкой с друзьями:</p>
+                    <div class="btn-group" role="group" aria-label="">
+                        <a href="#" class="btn btn-social fb"></a>
+                        <a href="#" class="btn btn-social vk"></a>
+                        <a href="#" class="btn btn-social tw"></a>
+                        <a href="#" class="btn btn-social rss"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights">
+                <div class="container">Copyright Model Agency &amp; Promotion Online "Becoming More Beautiful &amp; Earn" &copy; 2017. All Rights Reserved.</div>
+            </div>
+        </footer><!-- footer -->
+
+    </div><!-- /wrapper -->
+
+    <div id="signin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="signinLead">
+    
+
+    <div class="vertical-alignment-helper">
+        <div class="vertical-align-center">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="lead" id="signinLead">
+                                <h3>Участие</h3>
+                                <h2>Как стать участником?</h2>
+                            </div>
+                            <p>Приведи свой аккаунт в порядок, добавь свои лучшие снимки и заполни форму рядом.</p>
+                            <ul>
+                                <li>Укажи свой никнейм в instagram, пример @nickname</li>
+                                <li>Укажи свой адрес почты</li>
+                                <li>Укажи контактный телефон</li>
+                                <li>Если подходишь - наш менеджер напишет или перезвонит</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="#" method="post" id="signinForm">
+                                <div class="form-group">
+                                    <label for="signinUsername" class="control-label">Аккаунт в инстаграм</label>
+                                    <input type="text" class="form-control" id="signinUsername" placeholder="@nickname" name="username">
+                                </div>
+                              
+                                <div class="form-group">
+                                    <label for="signinEmail" class="control-label">Почта для контакта</label>
+                                    <input type="email" class="form-control" id="signinEmail" placeholder="some@example.com" name="email">
+                                </div>
+                             
+                                <div class="form-group form-phone">
+                                    <label for="signinUsername" class="control-label">Контактный телефон</label>
+                                    <input type="text" class="form-control" id="signinPhone" placeholder="" name="phone">
+                                </div>
+
+                                <button id="signinSubmit" type="submit" class="btn btn-primary" data-loading-text="Отправка..." autocomplete="off">Принять участие</button>
+                            </form>
+                        </div>
+                        <div class="icon-close"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+
+
+    </div><!-- /modal -->
+
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -188,6 +482,9 @@
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="/public/js/ie10-viewport-bug-workaround.js"></script>
         <script src="/public/js/lightslider.min.js"></script>
+        <script src="/public/js/jquery.validate.min.js"></script>
+        <script src="/public/js/additional-methods.min.js"></script>
+        <script src="/public/js/intlTelInput.js"></script>
         <script src="/public/js/scripts.js"></script>
     </body>
 </html>
