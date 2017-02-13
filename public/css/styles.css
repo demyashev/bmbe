@@ -879,6 +879,30 @@ footer .btn-social.rss {background-image: url('../../public/img/icons/social-rss
     .navbar-toggle {
         display: block;
     }
+
+    .what-img,
+    .info-more-img img {
+        position: relative;
+        top: auto;
+        left: auto;
+        max-width: 100%;
+    }
+
+    .lead h2 {
+        font-size: 24px;
+    }
+
+    .splash p:first-child {
+        font-size: 32px;
+    }
+
+    .splash p:last-child {
+        font-size: 28px;
+    }
+
+    .splash p {
+        line-height: 40px;
+    }
 }
 
 
