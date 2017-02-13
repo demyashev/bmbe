@@ -3,6 +3,7 @@
 *.sublime-workspace
 *.psd
 /public/files/BMBE_form.png
+/public/files/BMBE_landing_page_final.jpg
 
 # Windows image file caches
 Thumbs.db

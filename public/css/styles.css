@@ -45,7 +45,7 @@ input[type="email"] {
 .btn .icon {
     display: inline-block;
     width: 12px;
-    height: 12px;
+    height: 11px;
     background-size: 14px;
     background-repeat: no-repeat;
 }
@@ -106,6 +106,7 @@ blockquote {
     font-weight: normal;
     text-transform: uppercase;
     color: #080f19;
+    font-size: 11px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -142,7 +143,7 @@ blockquote {
 }
 
 .navbar-brand {
-    margin-right: 30px;
+    margin-right: 45px;
     padding-top: 0;
     width: 70px;
     height: 70px;
@@ -152,9 +153,10 @@ blockquote {
     color: #fff;
     margin: 0;
     font-size: 12px;
-    padding: 12px 26px;
+    padding: 12px 22px;
     margin-top: 2px;
     text-transform: none;
+    margin-left: 12px;
 }
 
 /*.navbar-default .navbar-nav > li > a.active {
@@ -192,7 +194,7 @@ blockquote {
     width: 56px;
     height: 56px;
     /*opacity: 1;*/
-    top: 16px;
+    top: 14px;
     line-height: 56px;
     
 }
@@ -210,18 +212,18 @@ blockquote {
 .lSPrev-desc,
 .lSNext-desc {
     position: absolute;
-    line-height: 56px;
+    line-height: 53px;
     text-transform: uppercase;
     color: #000;
     font-size: 11px;
 }
 
 .lSPrev-desc {
-    left: 86px;
+    left: 102px;
 }
 
 .lSNext-desc {
-    right: 86px;
+    right: 102px;
 }
 
 .lSSlideOuter .lSPager.lSpg {
@@ -278,18 +280,20 @@ blockquote {
 }
 
 .lead {
-    padding: 80px 0;
+    padding: 80px 0 42px 0;
     text-align: center;
 }
 .lead h3 {
     color: #abc6ca;
     font-size: 12px;
+    line-height: 20px;
     text-transform: uppercase;
     font-family: 'Gotham Pro Narrow', Arial, sans-serif;
     font-weight: 500;
 }
 
 .lead h2 {
+    margin: 40px 0 30px 0;
     color: #000;
     font-size: 36px;
     font-weight: bold;
@@ -329,7 +333,7 @@ blockquote {
         width: 90px;
         height: 90px;
         display: inline-block;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
         background-repeat: no-repeat;
         background-position: center center;
     }
@@ -342,6 +346,7 @@ blockquote {
     
     .intro-item > h4,
     .news-item > h4 {
+        margin: 20px 0;
         font-size: 14px;
         line-height: 20px;
         font-family: 'Gotham Pro Narrow', Arial, sans-serif;
@@ -362,7 +367,8 @@ blockquote {
     .intro-item > .btn,
     .news-item > .btn {
         margin-top: 40px;
-        padding: 12px 20px;
+        padding: 10px 20px;
+        font-size: 11px;
         font-weight: normal;
     }
 
@@ -370,17 +376,17 @@ blockquote {
  * Splash
  */
 .splash {
-    padding: 80px 0;
+    padding: 78px 0;
     background: #ffb300;
     text-align: center;
 }
 
 .splash p {
-    line-height: 80px;
+    line-height: 78px;
 }
 
 .splash p:first-child {
-    font-size: 60px;
+    font-size: 56px;
     font-weight: bold;
     color: #fff;
 }
@@ -395,8 +401,10 @@ blockquote {
  * What
  */
 #what {
-    background: #fdfdfd;
+    background-image: url('/public/img/what-bg.jpg');
+    background-repeat: repeat-x;
     padding-top: 80px;
+    padding-bottom: 150px;
 }
 
 #what .lead {
@@ -409,14 +417,17 @@ blockquote {
     color: #3e5c59;
     font-family: 'HelveticaNeueCyr', Arial, sans-serif;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .what-img {
-    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 29px;
 }
 
 #what .btn-group {
-    padding-top: 40px;
+    padding-top: 22px;
 }
 
 #what .btn-social {
@@ -427,7 +438,7 @@ blockquote {
     background-size: 38px;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-right: 15px;
+    margin-right: 16px;
 }
     
     .btn-social.fb {background-image: url('/public/img/icons/social-fb.png');}        
@@ -605,11 +616,20 @@ blockquote {
 
     #info-more .lead {
         text-align: left;
-        padding: 60px 0 0 0;
+        margin: 30px 0 10px 0;
+        padding: 35px 0 0 0;
     }
+
+        #info-more .lead h2 {
+            margin: 40px 0 0 0;
+        }
 
     #info-more .mini-lead {
         padding-right: 85px;
+    }
+
+    #info-more .mini-lead .lead {
+        margin: 0;
     }
 
 .info-more-img {
@@ -807,4 +827,12 @@ footer .btn-social.rss {background-image: url('/public/img/icons/social-rss-foot
         bottom: 6px;
         left: 0;
     }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        width: 1185px;
+    }
+
 }
