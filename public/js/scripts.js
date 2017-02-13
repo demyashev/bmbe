@@ -1,5 +1,7 @@
 $(document).ready(function() {
     
+    bodyPadding = 90;
+
     $('#slider').lightSlider({
         auto:true,
         adaptiveHeight: false,
@@ -9,15 +11,38 @@ $(document).ready(function() {
         mode: 'fade',
         speed: 1000,
         pause: 3000,
-        useCSS: false,
+        useCSS: true,
+        gallery: false,
         onSliderLoad: function() {
             var slides = $('.lslide');
             var next = $(slides[1]).children('img').attr('alt');
             var prev = $(slides[$(slides).length - 1]).children('img').attr('alt');
 
+
+
             $('.lSAction').wrap('<div class="container"></div>');
             $('.lSAction').append('<span class="lSPrev-desc">' + prev + '</span>');
             $('.lSAction').append('<span class="lSNext-desc">' + next + '</span>');
+                
+            // 1920 image width
+            $('#slider').css({
+                'height': $(window).height() + 'px',
+                'padding-bottom': 0
+            });
+
+            if ($(window).width() > 1920 ) {
+                padding = '-' + ($(window).width() - 1920) / 2;
+            }
+            else {
+                padding = '-' + (1920 - $(window).width()) / 2;
+            }
+
+            $('.lslide img').each(function(index, el) {
+               $(el).css('left', padding + 'px' );
+            });
+            
+
+
             $('#slider').removeClass('cS-hidden');
         },
         onAfterSlide: function() {
@@ -34,20 +59,22 @@ $(document).ready(function() {
 
     
     $('.nav a').click(function(event) {
-        var delta = 90; // body top padding
-        var id = $(this).attr('href');
+        var _this = $(this);
+        var id = _this.attr('href');
 
         if (id != '#') {
 
             $('html, body').animate({
-                scrollTop: $(id).offset().top - delta
+                scrollTop: $(id).offset().top - bodyPadding
             }, 2000, function(){
                 $('.nav a').parent('li').each(function(index, el) {
                     $(el).removeClass('active');   
                 }); 
+
+                _this.parent('li').addClass('active');
             });
 
-            $(this).parent('li').addClass('active');
+            
             
             return false;
         }
