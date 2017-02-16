@@ -28,6 +28,16 @@ input[type="email"] {
     border-color: #000;
 }
 
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary.focus, 
+.btn-primary:focus,
+.btn-primary:active:focus {
+    color: #010101;
+    background-color: #ff5252;
+    border-color: #000;
+}
+
 .btn-default {
     color: #000;
     background-color: #fff;
@@ -42,13 +52,62 @@ input[type="email"] {
     border-color: #f9a825;
 }
 
-.btn .icon {
-    display: inline-block;
-    width: 12px;
-    height: 11px;
-    background-size: 14px;
-    background-repeat: no-repeat;
+.btn-default.active, 
+.btn-default:active {
+    color: #fff;
+    background-color: #FF9F03;
+    border-color: #f9a825;
 }
+
+.btn-default.focus,
+.btn-default:focus {
+    color: #fff;
+    background-color: #f9a825;
+    border-color: #f9a825;
+}
+
+.btn-default:active:focus {
+    color: #fff;
+    background-color: #f9a825;
+    border-color: #f9a825;
+}
+
+.btn-social.fb svg .bg path {
+    fill: #3b5998;
+}
+    .btn-social.fb:hover svg .bg path {
+        fill: #2E4E90;
+    }
+
+.btn-social.vk svg .bg path {
+    fill: #45668e;
+}
+    .btn-social.vk:hover svg .bg path {
+        fill: #2A5488;
+    }
+
+.btn-social.tw svg .bg path {
+    fill: #00aced;
+}
+    .btn-social.tw:hover svg .bg path {
+        fill: #35C7FE;
+    }
+
+.btn-social.rss svg .bg path {
+    fill: #2d9ad2;
+}
+    .btn-social.rss:hover svg .bg path {
+        fill: #1E84B9;
+    }
+
+.btn i {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+}
+    .btn i.arrow {
+        background: url('../../public/svg/arrow_carrot-2right.svg');
+    }
 
 .svg path {
     fill: #abc6ca;
@@ -60,10 +119,6 @@ input[type="email"] {
 
 a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
     border-color: transparent;
-}
-
-.icon-arrow-carrot-right {
-    background-image: url('../../public/img/icons/arrow_carrot-2right.svg');
 }
 
 blockquote {
@@ -124,6 +179,11 @@ blockquote {
     background: transparent;
 }
 
+.navbar-default .navbar-nav .dropdown-menu {
+    min-width: 69px;
+    font-size: 12px;
+}
+
 .navbar-default .navbar-nav > li > a {
     color: #080f19;
 }
@@ -154,16 +214,38 @@ blockquote {
 .navbar-toggle {
     background: #fff;
     margin-top: 18px;
+    border-radius: 0;
 }
 
-.navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle {
+    border-color: #000;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: #ff5252;
+    border-color: #ff5252;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
     background: #000;
+    border-radius: 0;
     width: 30px;
 }
+
+.navbar-default .navbar-toggle:focus .icon-bar, 
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background: #fff;
+} 
 
 .navbar-brand {
     margin-right: 45px;
     padding-top: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.navbar-brand img {
     width: 70px;
     height: 70px;
 }
@@ -636,10 +718,10 @@ opacity: 1;
     margin-right: 16px;
 }
     
-    .btn-social.fb {background-image: url('../../public/img/icons/social-fb.png');}        
-    .btn-social.vk {background-image: url('../../public/img/icons/social-vk.png');}
-    .btn-social.tw {background-image: url('../../public/img/icons/social-tw.png');}
-    .btn-social.rss {background-image: url('../../public/img/icons/social-rss.png');}
+    .btn-social.fb {}        
+    .btn-social.vk {}
+    .btn-social.tw {}
+    .btn-social.rss {}
 
 /**
  * Join
@@ -664,7 +746,7 @@ opacity: 1;
 }
     .icon.iboost {width: 185px; background-image: url('../../public/img/icons/iboost.png');}
     .icon.adwithme {width: 114px; background-image: url('../../public/img/icons/adwithme.png');}
-    .icon.bmbe {width: 115px; background-image: url('../../public/img/icons/bmbe.png');}
+    .icon.bmbe {width: 115px; }
 
 .join-item h4 {
     font-family: 'Gotham Pro Narrow', Arial, sans-serif;
@@ -908,19 +990,27 @@ footer .btn-group {
 }
 
 footer .btn-social {
+    padding: 0;
     border: 0;
     width: 49px;
     height: 49px;
-    background-size: 49px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-}
+}   
+    footer .btn-social:last-child {
+        margin-right: 0;
+    }
 
-footer .btn-social.fb {background-image: url('../../public/img/icons/social-fb-footer.png');}        
-footer .btn-social.vk {background-image: url('../../public/img/icons/social-vk-footer.png');}
-footer .btn-social.tw {background-image: url('../../public/img/icons/social-tw-footer.png');}
-footer .btn-social.rss {background-image: url('../../public/img/icons/social-rss-footer.png');}
+    footer .btn-social svg {
+        width: 49px;
+        height: 49px;
+    }
+
+footer .btn-social.fb {}        
+footer .btn-social.vk {}
+footer .btn-social.tw {}
+footer .btn-social.rss {}
 
 /**
  * Modal

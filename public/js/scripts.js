@@ -72,10 +72,8 @@ $(document).ready(function() {
 
                 _this.parent('li').addClass('active');
             });
-
-            
-            
-            return false;
+   
+            return true;
         }
     });
     
