@@ -505,24 +505,33 @@ opacity: 1;
 }
 
     .intro-item > .icon-container {
+        /*
         position: relative;
         width: 100%;
         padding-bottom: 100%;
         display: block;
+        */
+       padding-bottom: 20px;
     }
         .intro-item > .icon-container > .icon {
+            /*
             display: block;
             position: absolute;
             top: 0;
             width: 100%;
             height: 100%;
             left: 0;
+            */
         }
 
         .intro-item > .icon.earth {}
         .intro-item > .icon.people {}
         .intro-item .icon.flower {
-            padding: 50px;
+            /*padding: 50px;*/
+        }
+
+        .intro-item .svg {
+            max-width: 100px;
         }
     
     .intro-item > h4,
@@ -1082,6 +1091,24 @@ footer .btn-social.rss {background-image: url('../../public/img/icons/social-rss
 
     .splash p {
         line-height: 40px;
+    }
+    .what-img {
+        width: 100%;
+        margin-top: 40px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .info-text {
+        padding-right: 0;
+    }
+
+    .info-img {
+        width: 100%;
+    }
+
+    #info-more .row:first-child .col-md-6 {
+        padding-left: 0;
     }
 }
 

@@ -1,27 +1,5 @@
-<HTML>
-<HEAD>
-    <title>SVG</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <style>
-        .svg {
-            width: 400px;
-            height: 400px;
-        }
-
-        .svg-primary {
-            fill: #abc6ca;
-        }
-
-        .svg-hover path {
-            fill: #fbaf5d;
-        }
-
-        svg:hover path {
-            fill: red;
-        }
-    </style>
-</HEAD>
-<BODY>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="90pt" height="90pt" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg">
 <g id="#abc6caff">
 <path fill="#abc6ca" opacity="1.00" d=" M 44.19 0.00 L 45.79 0.00 C 51.75 1.08 51.39 8.37 49.79 12.76 C 48.02 16.56 41.94 16.52 40.23 12.69 C 38.73 8.31 38.33 1.14 44.19 0.00 M 42.96 6.92 C 43.23 8.54 42.62 10.74 44.15 11.86 C 45.46 12.60 46.98 11.43 46.88 10.01 C 47.08 7.59 47.98 4.29 45.00 3.22 C 43.63 4.03 42.43 5.18 42.96 6.92 Z" />
@@ -39,18 +17,3 @@
 <path fill="#abc6ca" opacity="1.00" d=" M 31.70 90.00 C 29.31 85.06 33.58 78.32 39.04 77.87 C 41.15 77.35 43.04 78.61 45.01 79.11 C 47.00 78.65 48.89 77.34 51.02 77.87 C 56.58 78.37 60.46 84.87 58.52 90.00 L 31.70 90.00 M 34.59 86.37 C 41.55 86.42 48.51 86.42 55.46 86.37 C 54.93 83.16 51.39 80.09 48.18 81.95 C 45.54 83.50 42.67 82.34 40.09 81.34 C 37.21 81.31 35.19 83.76 34.59 86.37 Z" />
 </g>
 </svg>
-
-
-<script>
-/*  
-    with js
-    
-    $('svg path').hover(function() {
-        $(this).parent().parent('svg').addClass('svg-hover');
-    }, function() {
-        $(this).parent().parent('svg').removeClass('svg-hover');
-    });
-*/
-</script>
-</BODY>
-</HTML>

@@ -18,11 +18,10 @@ $(document).ready(function() {
             var next = $(slides[1]).children('img').attr('alt');
             var prev = $(slides[$(slides).length - 1]).children('img').attr('alt');
 
-
-
             $('.lSAction').wrap('<div class="container"></div>');
             $('.lSAction').append('<span class="lSPrev-desc">' + prev + '</span>');
             $('.lSAction').append('<span class="lSNext-desc">' + next + '</span>');
+            $('.lSAction').addClass('hidden-xs hidden-sm');
                 
             // 1920 image width
             $('#slider').css({
