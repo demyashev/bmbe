@@ -76,6 +76,23 @@ $(document).ready(function() {
             return true;
         }
     });
+
+    /**
+     * Waypoints
+     */
+    $('[data-animate="true"]').hide();
+    waypoint = $('.section').waypoint({
+        handler: function(direction) {
+            if (direction == 'down') {
+                console.log('You have scrolled to a thing')
+                $('#' + this.element.id + ' [data-animate="true"]').fadeIn('1000');
+            }
+            console.log('Direction: ' + direction);
+            console.log(this.element.id);
+        },
+        offset: '-80%'
+    });
+
     
     $("#signinForm").validate({
         submitHandler: function(form){ 
