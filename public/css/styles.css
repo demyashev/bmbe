@@ -1116,6 +1116,10 @@ footer .btn-social.rss {}
         display: none;
     }*/
 
+    #navbar {
+        padding-bottom: 10px;
+    }
+
     .navbar-nav > li,
     .navbar-right,
     .navbar-nav {
@@ -1136,8 +1140,6 @@ footer .btn-social.rss {}
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-
-   
 }
 
 @media (max-width: 992px) {
@@ -1173,6 +1175,10 @@ footer .btn-social.rss {}
         top: auto;
         left: auto;
         max-width: 100%;
+    }
+
+    .intro-item .svg {
+        max-width: 150px;
     }
 
     .lead h2 {

@@ -72,6 +72,8 @@ $(document).ready(function() {
 
                 _this.parent('li').addClass('active');
             });
+
+            $('#navbar').removeClass('in');
    
             return true;
         }
