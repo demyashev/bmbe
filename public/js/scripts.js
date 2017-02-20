@@ -148,7 +148,7 @@ $(document).ready(function() {
                 callback(countryCode);
             });
         },
-        utilsScript: "/public/js/intltelinput/utils.js" // just for formatting/placeholders etc
+        utilsScript: "public/js/intltelinput/utils.js" // just for formatting/placeholders etc
     });
 
     $("#signinPhone").on("keyup change", function() {
