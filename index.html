@@ -38,7 +38,7 @@
         <script src="public/js/modernizr.custom.js"></script>
     </head>
 
-    <body>
+    <body id="wrapper">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -81,30 +81,40 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-
-    <div class="wrapper" id="wrapper">
-
-        <div class="ip-header">
-            <div class="ip-loader">
-                <svg class="ip-inner" width="120px" height="120px" viewBox="0 0 80 80">
-                    <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-                    <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-                </svg>
-            </div>
-        </div>
     
+    <div class="ip-header">
+        <div class="ip-loader">
+            <svg class="ip-inner" width="120px" height="120px" viewBox="0 0 80 80">
+                <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+                <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+    <div class="" style="position: relative;">
         <ul id="slider" class="gallery list-unstyled cS-hidden">
-            <li data-thumb="public/files/slider/1.jpg" class="active"> 
-                <img src="public/files/slider/1.jpg" alt="1 Becoming More Beautiful & Earn"/>
+            <li data-thumb="public/files/slider/1.jpg" class="active" data-title=""> 
+                <img src="public/files/slider/1.jpg" alt="Model agency &amp; promotion online"/>
+                <div class="container">
+                    <div class="slide-text">Model<br><b>agency<br> &amp; promotion</b><br> online</div>
+                </div>
             </li>
-            <li data-thumb="public/files/slider/2.jpg"> 
-                <img src="public/files/slider/2.jpg" alt="2 Becoming More Beautiful & Earn"/>
+            <li data-thumb="public/files/slider/2.jpg" data-title=""> 
+                <img src="public/files/slider/2.jpg" alt="Super agency &amp; promotion offline"/>
+                <div class="container">
+                    <div class="slide-text">Super<br><b>agency<br>&amp; promotion</b><br> offline</div>
+                </div>
             </li>
-            <li data-thumb="public/files/slider/3.jpg"> 
-                <img src="public/files/slider/3.jpg" alt="3 Becoming More Beautiful & Earn"/>
+            <li data-thumb="public/files/slider/3.jpg" data-title=""> 
+                <img src="public/files/slider/3.jpg" alt="Model team &amp; promotion sublime"/>
+                <div class="container">
+                    <div class="slide-text">Model<br><b>team<br>&amp; promotion</b><br> sublime</div>
+                </div>
             </li>
         </ul><!-- /slider -->
-    
+        
         <div id="mouse" class="hidden-xs hidden-sm">
             <div class="mouse">
                 <div class="wheel"></div>
@@ -115,6 +125,9 @@
                 <span class="m_scroll_arrows trei"></span>
             </div>
         </div>
+    </div>
+    
+        
             
         <div id="intro" class="section">
             <div class="container">
@@ -440,7 +453,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="public/img/info.png" alt="" class="info-img">
+                    <img src="public/svg/info.svg" alt="" class="info-img">
                 </div>
             </div>
         </div>

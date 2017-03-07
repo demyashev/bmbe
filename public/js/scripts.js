@@ -11,7 +11,7 @@ $(document).ready(function() {
         mode: 'fade',
         speed: 1000,
         pause: 3000,
-        useCSS: true,
+        useCSS: false,
         gallery: false,
         onSliderLoad: function() {
             var slides = $('.lslide');
@@ -29,6 +29,16 @@ $(document).ready(function() {
                 'padding-bottom': 0
             });
 
+            // $('#slider img').each(function(i, item) {
+            //     var img_width = $(item).width();
+            //     var left_margin = -(img_width / 2);
+            //     $(item).css({
+            //         'left': '50%',
+            //         'margin-left': left_margin
+            //     });
+            // });
+
+            /*
             if ($(window).width() > 1920 ) {
                 padding = '-' + ($(window).width() - 1920) / 2;
             }
@@ -39,20 +49,23 @@ $(document).ready(function() {
             $('.lslide img').each(function(index, el) {
                $(el).css('left', padding + 'px' );
             });
-            
+            */
 
 
             $('#slider').removeClass('cS-hidden');
         },
         onAfterSlide: function() {
+            
             lScurrentSlide = $('.lslide.active');
             lSnextSlideAlt = lScurrentSlide.next('li').children('img').attr('alt');
-            lSprevSlideAlt = lScurrentSlide.prev('li').children('img').attr('alt');;
+            lSprevSlideAlt = lScurrentSlide.prev('li').children('img').attr('alt');
 
             $('.lSPrev-desc').html(lSprevSlideAlt);
             $('.lSNext-desc').html(lSnextSlideAlt);
-
             
+
+            var text = $('.lslide.active').data('title');
+            $('#slide-text').html(text);
         }
     });
 
@@ -82,6 +95,7 @@ $(document).ready(function() {
     /**
      * Waypoints
      */
+    /*
     $('[data-animate="true"]').hide();
     waypoint = $('.section').waypoint({
         handler: function(direction) {
@@ -94,6 +108,7 @@ $(document).ready(function() {
         },
         offset: '-80%'
     });
+    */
 
     
     $("#signinForm").validate({

@@ -13,7 +13,7 @@ input[type="email"] {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 1920px;
+    /*max-width: 1920px;*/
 }
 
 .btn-primary {
@@ -372,13 +372,41 @@ blockquote {
     text-align: center;
 }
 
+#slider > li > .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: right;
+}
+
+.slide-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 1200px;
+    z-index: 9999;
+    top: 0;
+    font-size: 70px;
+    line-height: 60px;
+    font-family: 'Gotham Pro', Arial, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 25% 0;
+}
+
+.slide-text b {
+    font-family: 'Gotham Pro', Arial, sans-serif;
+    font-weight: 900;
+}
+
 .lslide > img {
     /*max-width: 100%;*/
     height: 100%;
-    width: auto;
-    margin: 0 auto;
-    position: absolute;
-    right: -25%;
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+   /* position: absolute;
+    right: -25%;*/
 }
 
 .lSSlideOuter .container {
@@ -1091,7 +1119,26 @@ footer .btn-social.rss {}
 /**
  * Media quires
  */
+@media (max-width: 480px) {
+    .lslide > img {
+        margin-left: -45%;
+    }
+    .slide-text {
+        font-size: 40px;
+        line-height: 35px;
+    }
+}
+
 @media (max-width: 768px) {
+
+    .slide-text {
+        padding: 56% 0;
+        
+        padding-right: 15px;
+    }
+
+    
+
     .lSAction > a {
         background-size: 64px;
         width: 32px;
@@ -1115,6 +1162,10 @@ footer .btn-social.rss {}
  /*   .navbar-collapse {
         display: none;
     }*/
+    
+    .slide-text {
+        padding: 40% 0;
+    }
 
     #navbar {
         padding-bottom: 10px;
