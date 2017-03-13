@@ -102,11 +102,14 @@ input[type="email"] {
 
 .btn i {
     display: inline-block;
-    width: 13px;
-    height: 13px;
+    width: 7px;
+    height: 8px;
 }
     .btn i.arrow {
-        background: url('../../public/svg/arrow_carrot-2right.svg');
+        background: url('../../public/img/icons/double-arrows.png') no-repeat;
+    }
+    .btn.btn-default:hover i.arrow {
+        background: url('../../public/img/icons/double-arrows-white.png') no-repeat;
     }
 
 .svg path {
@@ -824,6 +827,7 @@ opacity: 1;
         }
 
 #models > .row {
+    overflow: hidden;
     margin-left: 0;
     margin-right: 0;
 }
@@ -886,7 +890,7 @@ opacity: 1;
 
     .info-img {
         max-width: 100%;
-        margin-top: 120px;
+        margin-top: 195px;
     }
 
     .info-text {

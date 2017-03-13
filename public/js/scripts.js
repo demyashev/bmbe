@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    new WOW().init();
     
     bodyPadding = 90;
 
@@ -23,34 +25,10 @@ $(document).ready(function() {
             $('.lSAction').append('<span class="lSNext-desc">' + next + '</span>');
             $('.lSAction').addClass('hidden-xs hidden-sm');
                 
-            // 1920 image width
             $('#slider').css({
                 'height': $(window).height() + 'px',
                 'padding-bottom': 0
             });
-
-            // $('#slider img').each(function(i, item) {
-            //     var img_width = $(item).width();
-            //     var left_margin = -(img_width / 2);
-            //     $(item).css({
-            //         'left': '50%',
-            //         'margin-left': left_margin
-            //     });
-            // });
-
-            /*
-            if ($(window).width() > 1920 ) {
-                padding = '-' + ($(window).width() - 1920) / 2;
-            }
-            else {
-                padding = '-' + (1920 - $(window).width()) / 2;
-            }
-
-            $('.lslide img').each(function(index, el) {
-               $(el).css('left', padding + 'px' );
-            });
-            */
-
 
             $('#slider').removeClass('cS-hidden');
         },
@@ -163,7 +141,7 @@ $(document).ready(function() {
                 callback(countryCode);
             });
         },
-        utilsScript: "public/js/intltelinput/utils.js" // just for formatting/placeholders etc
+        utilsScript: "public/js/intltelinput/utils.js"
     });
 
     $("#signinPhone").on("keyup change", function() {
@@ -197,8 +175,4 @@ $(document).ready(function() {
 
     // on keyup / change flag: reset
     $("#signinPhone").on("keyup change", reset);
-
-
-    
-
 });
