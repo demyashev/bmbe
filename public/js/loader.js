@@ -106,7 +106,7 @@
 							onEndHeaderAnimation();
 						}
 					}
-				}, 1 );
+				}, 500 );
 		};
 
 		loader.setProgressFn( simulationFn );
