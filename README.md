@@ -3,7 +3,7 @@ BMBE
 Сайт по продвижению instagram аккаунтов
 
 ## Preview
-[https://demyashev.github.io/bmbe/](https://demyashev.github.io/bmbe/)
+* [Главная](https://demyashev.github.io/bmbe/index.html)
 
 ---
 
